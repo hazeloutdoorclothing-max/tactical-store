@@ -1,14 +1,38 @@
 import { useState } from "react";
 
 const PRODUCTS = [
-  { id: 1, name: "Chaqueta Táctica M-65", price: 89.99, category: "chaquetas", image: "/products/product-1.jpg" },
-  { id: 2, name: "Chaqueta Cargo Camo", price: 74.99, category: "chaquetas", image: "/products/product-1.jpg" },
-  { id: 3, name: "Chaqueta Softshell OD", price: 95.00, category: "chaquetas", image: "/products/product-1.jpg" },
-  { id: 4, name: "Pantalón Cargo Táctico", price: 45.99, category: "pantalones", image: "/products/product-1.jpg" },
-  { id: 5, name: "Pantalón BDU Woodland", price: 39.99, category: "pantalones", image: "/products/product-1.jpg" },
-  { id: 6, name: "Pantalón Ripstop Negro", price: 52.00, category: "pantalones", image: "/products/product-1.jpg" },
-  { id: 7, name: "Chaqueta Windbreaker", price: 68.00, category: "chaquetas", image: "/products/product-1.jpg" },
-  { id: 8, name: "Pantalón Táctico Slim", price: 58.00, category: "pantalones", image: "/products/product-1.jpg" },
+  // Doc 1: products 1-10
+  { id: 1, name: "Assassin Tactical Jacket", price: 89.99, category: "jackets", image: "/products/product-1.jpg" },
+  { id: 2, name: "Dragon Armor 2.0 Cotton Robe", price: 95.00, category: "jackets", image: "/products/product-2.jpg" },
+  { id: 3, name: "Darkwalker Quick Dry Shirt", price: 42.99, category: "shirts", image: "/products/product-3.jpg" },
+  { id: 4, name: "Hurricane Round Neck Tee", price: 34.99, category: "shirts", image: "/products/product-4.jpg" },
+  { id: 5, name: "Hurricane Lapel Quick Dry Tee", price: 36.99, category: "shirts", image: "/products/product-5.jpg" },
+  { id: 6, name: "Hurricane Crew Neck Quick Dry Tee", price: 36.99, category: "shirts", image: "/products/product-6.jpg" },
+  { id: 7, name: "G2 Tactical Long Sleeve", price: 54.99, category: "shirts", image: "/products/product-7.jpg" },
+  { id: 8, name: "G2 Tactical Short Sleeve", price: 44.99, category: "shirts", image: "/products/product-8.jpg" },
+  { id: 9, name: "G3 Tactical Long Sleeve", price: 57.99, category: "shirts", image: "/products/product-9.jpg" },
+  { id: 10, name: "M65 Punch Windbreaker", price: 98.00, category: "jackets", image: "/products/product-10.jpg" },
+  // Doc 2: products 11-20
+  { id: 11, name: "Special Ops Tactical Long Sleeve", price: 56.99, category: "shirts", image: "/products/product-11.jpg" },
+  { id: 12, name: "Dragon Armor Tactical Long Sleeve", price: 58.99, category: "shirts", image: "/products/product-12.jpg" },
+  { id: 13, name: "Special Ops Tactical Short Sleeve", price: 46.99, category: "shirts", image: "/products/product-13.jpg" },
+  { id: 14, name: "R6 Tactical Base Layer", price: 39.99, category: "shirts", image: "/products/product-14.jpg" },
+  { id: 15, name: "Lightweight Cultural T-Shirt", price: 29.99, category: "shirts", image: "/products/product-15.jpg" },
+  { id: 16, name: "Striker Quick Dry T-Shirt", price: 34.99, category: "shirts", image: "/products/product-16.jpg" },
+  { id: 17, name: "Wilderness Camo T-Shirt", price: 36.99, category: "shirts", image: "/products/product-17.jpg" },
+  { id: 18, name: "Vanguard Quick Dry Long Sleeve", price: 44.99, category: "shirts", image: "/products/product-18.jpg" },
+  { id: 19, name: "Vanguard Quick Dry T-Shirt", price: 38.99, category: "shirts", image: "/products/product-19.jpg" },
+  { id: 20, name: "Dragon Armor Short Sleeve", price: 46.99, category: "shirts", image: "/products/product-20.jpg" },
+  // Doc 3: products 21-29
+  { id: 21, name: "Cold-Proof Hooded Jacket", price: 105.00, category: "jackets", image: "/products/product-21.jpg" },
+  { id: 22, name: "Dragon Armor Hard Shell Windbreaker", price: 110.00, category: "jackets", image: "/products/product-22.jpg" },
+  { id: 23, name: "Assassin Tactical Jacket V2", price: 92.00, category: "jackets", image: "/products/product-23.jpg" },
+  { id: 24, name: "Assassin Hooded Fleece Jacket", price: 88.00, category: "jackets", image: "/products/product-24.jpg" },
+  { id: 25, name: "Assassin Stand Collar Fleece", price: 85.00, category: "jackets", image: "/products/product-25.jpg" },
+  { id: 26, name: "Assassin Quick Dry T-Shirt", price: 35.99, category: "shirts", image: "/products/product-26.jpg" },
+  { id: 27, name: "Assassin Softshell Jacket", price: 99.00, category: "jackets", image: "/products/product-27.jpg" },
+  { id: 28, name: "Combat Shirt 1st Gen", price: 52.99, category: "shirts", image: "/products/product-28.jpg" },
+  { id: 29, name: "Combat Shirt 4th Gen", price: 59.99, category: "shirts", image: "/products/product-29.jpg" },
 ];
 
 const PHONE = "1234567890";
@@ -19,7 +43,7 @@ const mobileCSS = `
     .site-header { padding: 1rem !important; }
     .hero-section { padding: 2rem 1rem 1rem !important; }
     .hero-title { font-size: 1.75rem !important; }
-    .filter-bar { padding: 0 1rem 1rem !important; gap: 0.5rem !important; }
+    .filter-bar { padding: 0 1rem 1rem !important; }
     .site-footer { padding: 1.5rem 1rem !important; flex-direction: column; gap: 0.75rem; text-align: center; }
   }
 `;
@@ -30,9 +54,17 @@ export default function App() {
   const filtered = filter === "all" ? PRODUCTS : PRODUCTS.filter((p) => p.category === filter);
 
   const handleProduct = (product) => {
-    const msg = encodeURIComponent(`Hola! Me interesa: ${product.name} - $${product.price.toFixed(2)} CAD`);
+    const msg = encodeURIComponent(
+      `Hi! I'm interested in: ${product.name} - $${product.price.toFixed(2)} CAD`
+    );
     window.open(`https://wa.me/${PHONE}?text=${msg}`, "_blank");
   };
+
+  const categories = [
+    { key: "all", label: "View All" },
+    { key: "jackets", label: "Jackets" },
+    { key: "shirts", label: "Shirts" },
+  ];
 
   return (
     <>
@@ -69,11 +101,7 @@ export default function App() {
             textTransform: "uppercase",
             letterSpacing: "0.1em",
           }}>
-            {[
-              { key: "all", label: "Shop" },
-              { key: "chaquetas", label: "Jackets" },
-              { key: "pantalones", label: "Pants" },
-            ].map((f) => (
+            {categories.map((f) => (
               <a
                 key={f.key}
                 onClick={() => setFilter(f.key)}
@@ -122,11 +150,7 @@ export default function App() {
           padding: "0 3rem 1.5rem",
         }}>
           <div style={{ display: "flex", gap: "0.5rem" }}>
-            {[
-              { key: "all", label: "View All" },
-              { key: "chaquetas", label: "Jackets" },
-              { key: "pantalones", label: "Pants" },
-            ].map((f) => (
+            {categories.map((f) => (
               <button
                 key={f.key}
                 onClick={() => setFilter(f.key)}
