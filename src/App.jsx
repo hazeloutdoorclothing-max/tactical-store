@@ -206,7 +206,7 @@ export default function App() {
           <div style={{
             position: "absolute",
             left: "50%",
-            transform: "translateX(-50%)",
+            transform: "translateX(100%)",
             top: "1.5rem",
           }}>
             <img
