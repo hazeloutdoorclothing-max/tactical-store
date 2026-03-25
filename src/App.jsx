@@ -3,14 +3,25 @@ import PRODUCTS from "./products.json";
 
 const PHONE = "1234567890";
 
+const HERO_IMAGES = [
+  "/products/tops/assassin-tactical-jacket_photo.jpg",
+  "/products/tops/darkwalker-quick-dry-shirt_photo.jpg",
+  "/products/tops/m65-punch-windbreaker_photo.jpg",
+];
+
 const mobileCSS = `
   @media (max-width: 768px) {
     .product-grid { grid-template-columns: repeat(2, 1fr) !important; padding: 0 1rem 3rem !important; gap: 1rem !important; }
-    .site-header { padding: 1rem !important; flex-wrap: wrap; gap: 0.5rem; }
-    .hero-section { padding: 2rem 1rem 1rem !important; }
-    .hero-title { font-size: 1.75rem !important; }
     .filter-bar { padding: 0 1rem 1rem !important; flex-wrap: wrap; gap: 0.5rem; }
     .site-footer { padding: 1.5rem 1rem !important; flex-direction: column; gap: 0.75rem; text-align: center; }
+    .header-nav { display: none !important; }
+    .header-right-nav { display: none !important; }
+    .mobile-menu-btn { display: flex !important; }
+    .hero-banner { height: 90vh !important; }
+    .hero-grid { display: none !important; }
+    .hero-mobile-img { display: block !important; }
+    .hero-title { font-size: 2.2rem !important; }
+    .hero-subtitle { font-size: 0.8rem !important; max-width: 90% !important; }
   }
 `;
 
@@ -104,6 +115,7 @@ function ProductCard({ product, onClick }) {
 
 export default function App() {
   const [filter, setFilter] = useState("all");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const filtered = filter === "all" ? PRODUCTS : PRODUCTS.filter((p) => p.category === filter);
 
@@ -120,6 +132,10 @@ export default function App() {
     { key: "boots", label: "Boots" },
   ];
 
+  const scrollToProducts = () => {
+    document.getElementById("products")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <style>{mobileCSS}</style>
@@ -129,76 +145,264 @@ export default function App() {
         color: "#1a1a1a",
         fontFamily: "'Georgia', 'Times New Roman', serif",
       }}>
-        <header className="site-header" style={{
+
+        {/* ── HEADER (floating over hero) ── */}
+        <header style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 10,
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "1.25rem 3rem",
-          borderBottom: "1px solid #d4d0c8",
+          padding: "1.25rem 2rem",
         }}>
-          <div style={{
-            fontSize: "0.85rem",
-            fontFamily: "'Courier New', monospace",
-            letterSpacing: "0.25em",
-            textTransform: "uppercase",
-            fontWeight: 700,
-            color: "#2d2d2d",
-          }}>
-            Hazel Outdoor Clothing
-          </div>
-          <nav style={{
+          {/* Mobile hamburger (left) */}
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            style={{
+              display: "none",
+              alignItems: "center",
+              justifyContent: "center",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              color: "#F0EDE8",
+              fontSize: "1.5rem",
+              padding: 0,
+            }}
+          >
+            ☰
+          </button>
+
+          {/* Left nav (desktop) */}
+          <nav className="header-nav" style={{
             display: "flex",
-            gap: "2rem",
-            fontSize: "0.8rem",
+            gap: "1.5rem",
+            fontSize: "0.7rem",
             fontFamily: "'Courier New', monospace",
             textTransform: "uppercase",
-            letterSpacing: "0.1em",
+            letterSpacing: "0.12em",
           }}>
             {categories.map((f) => (
               <a
                 key={f.key}
-                onClick={() => setFilter(f.key)}
+                onClick={() => { setFilter(f.key); scrollToProducts(); }}
                 style={{
-                  color: filter === f.key ? "#1a1a1a" : "#888",
+                  color: filter === f.key ? "#fff" : "rgba(255,255,255,0.6)",
                   textDecoration: "none",
                   cursor: "pointer",
                   transition: "color 0.2s",
-                  borderBottom: filter === f.key ? "1px solid #1a1a1a" : "1px solid transparent",
-                  paddingBottom: "2px",
                 }}
               >
                 {f.label}
               </a>
             ))}
           </nav>
+
+          {/* Logo center */}
+          <div style={{
+            position: "absolute",
+            left: "50%",
+            transform: "translateX(-50%)",
+            top: "1.5rem",
+          }}>
+            <img
+              src="/hazel-logo.svg"
+              alt="Hazel"
+              style={{
+                height: "100px",
+                filter: "brightness(0) invert(1)",
+                cursor: "pointer",
+              }}
+              onClick={() => { setFilter("all"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+            />
+          </div>
+
+          {/* Right (desktop) */}
+          <div className="header-right-nav" style={{
+            display: "flex",
+            gap: "1.5rem",
+            fontSize: "0.7rem",
+            fontFamily: "'Courier New', monospace",
+            textTransform: "uppercase",
+            letterSpacing: "0.12em",
+            color: "rgba(255,255,255,0.6)",
+          }}>
+            <span>CAD</span>
+          </div>
         </header>
 
-        <section className="hero-section" style={{ padding: "3rem 3rem 1rem" }}>
-          <h1 className="hero-title" style={{
-            fontSize: "2.5rem",
-            fontWeight: 400,
-            margin: "0 0 1rem 0",
-            lineHeight: 1.1,
-            maxWidth: "600px",
+        {/* Mobile menu overlay */}
+        {mobileMenuOpen && (
+          <div style={{
+            position: "fixed",
+            inset: 0,
+            backgroundColor: "rgba(26,26,26,0.95)",
+            zIndex: 20,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "2rem",
           }}>
-            Hazel Outdoor Clothing
-          </h1>
-          <p style={{
-            fontSize: "0.95rem",
-            color: "#666",
-            maxWidth: "550px",
-            lineHeight: 1.6,
-            margin: "0 0 2rem 0",
+            <button
+              onClick={() => setMobileMenuOpen(false)}
+              style={{
+                position: "absolute",
+                top: "1.25rem",
+                right: "1.5rem",
+                background: "none",
+                border: "none",
+                color: "#F0EDE8",
+                fontSize: "1.5rem",
+                cursor: "pointer",
+              }}
+            >
+              ✕
+            </button>
+            {categories.map((f) => (
+              <a
+                key={f.key}
+                onClick={() => {
+                  setFilter(f.key);
+                  setMobileMenuOpen(false);
+                  setTimeout(scrollToProducts, 100);
+                }}
+                style={{
+                  color: filter === f.key ? "#F0EDE8" : "rgba(240,237,232,0.5)",
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  fontSize: "1.25rem",
+                  fontFamily: "'Courier New', monospace",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.2em",
+                  transition: "color 0.2s",
+                }}
+              >
+                {f.label}
+              </a>
+            ))}
+          </div>
+        )}
+
+        {/* ── HERO BANNER ── */}
+        <section className="hero-banner" style={{
+          position: "relative",
+          overflow: "hidden",
+          marginBottom: "10px",
+        }}>
+          {/* Desktop: 3 vertical photos side by side */}
+          <div className="hero-grid" style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            height: "100%",
+            gap: 0,
           }}>
-            Tactical and outdoor apparel built for durability, function, and everyday wear. Based in Canada.
-          </p>
+            {HERO_IMAGES.map((src, i) => (
+              <div key={i} style={{ overflow: "hidden" }}>
+                <img src={src} alt="" style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "top center",
+                  display: "block",
+                }} />
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile: single image fullscreen */}
+          <div className="hero-mobile-img" style={{
+            display: "none",
+            position: "absolute",
+            inset: 0,
+          }}>
+            <img src={HERO_IMAGES[0]} alt="" style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "top center",
+              display: "block",
+            }} />
+          </div>
+
+          {/* Gradient overlay */}
+          <div style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.05) 100%)",
+            pointerEvents: "none",
+          }} />
+
+          {/* Text at bottom-left */}
+          <div style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            padding: "0 2rem 3rem",
+            zIndex: 2,
+          }}>
+            <h1 className="hero-title" style={{
+              fontSize: "3rem",
+              fontWeight: 700,
+              color: "#F0EDE8",
+              margin: "0 0 0.75rem 0",
+              lineHeight: 1.05,
+              fontFamily: "'Georgia', 'Times New Roman', serif",
+              fontStyle: "italic",
+            }}>
+              Built for<br />the Field
+            </h1>
+            <p className="hero-subtitle" style={{
+              fontSize: "0.85rem",
+              color: "rgba(240,237,232,0.75)",
+              maxWidth: "420px",
+              lineHeight: 1.6,
+              margin: "0 0 1.5rem 0",
+              fontFamily: "'Georgia', serif",
+            }}>
+              Tactical and outdoor apparel crafted for durability, function, and everyday wear. Based in Canada.
+            </p>
+            <button
+              onClick={scrollToProducts}
+              style={{
+                padding: "0.7rem 2rem",
+                border: "1px solid rgba(240,237,232,0.8)",
+                borderRadius: "0",
+                background: "rgba(240,237,232,0.1)",
+                backdropFilter: "blur(4px)",
+                color: "#F0EDE8",
+                cursor: "pointer",
+                fontSize: "0.7rem",
+                fontFamily: "'Courier New', monospace",
+                textTransform: "uppercase",
+                letterSpacing: "0.15em",
+                transition: "all 0.3s",
+              }}
+              onMouseEnter={e => {
+                e.target.style.background = "#F0EDE8";
+                e.target.style.color = "#1a1a1a";
+              }}
+              onMouseLeave={e => {
+                e.target.style.background = "rgba(240,237,232,0.1)";
+                e.target.style.color = "#F0EDE8";
+              }}
+            >
+              Shop Now
+            </button>
+          </div>
         </section>
 
-        <div className="filter-bar" style={{
+        {/* ── FILTER BAR ── */}
+        <div id="products" className="filter-bar" style={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "0 3rem 1.5rem",
+          padding: "2rem 3rem 1.5rem",
         }}>
           <div style={{ display: "flex", gap: "0.5rem" }}>
             {categories.map((f) => (
@@ -228,6 +432,7 @@ export default function App() {
           </span>
         </div>
 
+        {/* ── PRODUCT GRID ── */}
         <div className="product-grid" style={{
           display: "grid",
           gridTemplateColumns: "repeat(4, 1fr)",
@@ -239,6 +444,7 @@ export default function App() {
           ))}
         </div>
 
+        {/* ── FOOTER ── */}
         <footer className="site-footer" style={{
           borderTop: "1px solid #d4d0c8",
           padding: "2rem 3rem",
@@ -256,6 +462,7 @@ export default function App() {
           <span>Contact via WhatsApp</span>
         </footer>
 
+        {/* ── WHATSAPP FAB ── */}
         <a
           href={`https://wa.me/${PHONE}`}
           target="_blank"
