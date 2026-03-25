@@ -1,0 +1,799 @@
+[
+    {
+      "id": "assassin-tactical-jacket",
+      "name": "Assassin Tactical Jacket",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/assassin-tactical-jacket_photo.jpg",
+      "fabric": "65% polyester + 35% cotton",
+      "season": "Spring, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Breathable and sweat-wicking fabric",
+        "Classic fit",
+        "Horseshoe cuff design",
+        "Abrasion and scratch resistant",
+        "Stand-up collar and neat stitching",
+        "Three-dimensional cut to fit the body"
+      ]
+    },
+    {
+      "id": "dragon-armor-2-cotton-robe",
+      "name": "Dragon Armor 2.0 Cotton Robe",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/dragon-armor-2-cotton-robe_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Zippered chest pocket",
+        "Windproof cuff system",
+        "Hooded drawstring design",
+        "Arm patch with zipper pocket",
+        "Warm design fears no cold outdoors",
+        "Three dimensional cutting that fits the body"
+      ]
+    },
+    {
+      "id": "darkwalker-quick-dry-shirt",
+      "name": "Darkwalker Quick Dry Shirt",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/darkwalker-quick-dry-shirt_photo.jpg",
+      "fabric": "Nylon spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Stretchy, crease-resistant fabric",
+        "Hidden chest pocket",
+        "Waterproof fabric, neat stitching",
+        "Three-dimensional cut to fit the body",
+        "Chest pocket reinforced loading",
+        "Classic lapel design"
+      ]
+    },
+    {
+      "id": "hurricane-round-neck-tee",
+      "name": "Hurricane Round Neck Tee",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/hurricane-round-neck-tee_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Elastic and wrinkle resistant",
+        "Two arm pocket design",
+        "Neat wiring",
+        "Stereoscopic cutting for slimming",
+        "Quick drying fabric",
+        "Classic round neck design"
+      ]
+    },
+    {
+      "id": "hurricane-lapel-quick-dry-tee",
+      "name": "Hurricane Lapel Quick Dry Tee",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/hurricane-lapel-quick-dry-tee_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer",
+      "description": "",
+      "advantages": [
+        "Stretchy, crease-resistant fabric",
+        "Small pockets on both arms",
+        "Waterproof fabric, neat stitching",
+        "Three-dimensional cut to fit the body",
+        "Quick-drying, breathable and wicking",
+        "Classic lapel design"
+      ]
+    },
+    {
+      "id": "hurricane-crew-neck-quick-dry-tee",
+      "name": "Hurricane Crew Neck Quick Dry Tee",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/hurricane-crew-neck-quick-dry-tee_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer",
+      "description": "",
+      "advantages": [
+        "Stretchy, crease-resistant fabric",
+        "Small pockets on both arms",
+        "Waterproof fabric, neat stitching",
+        "Three-dimensional cut to fit the body",
+        "Quick-drying, breathable and wicking",
+        "Classic round neckline design"
+      ]
+    },
+    {
+      "id": "g2-tactical-long-sleeve",
+      "name": "G2 Tactical Long Sleeve",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/g2-tactical-long-sleeve_photo.jpg",
+      "fabric": "65% polyester + 35% cotton / 97% stretch cotton + 3% spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Elbow pads can be fitted",
+        "Nylon patch on both arms",
+        "Adjustable cuffs",
+        "Elasticated body parts",
+        "Classic shape, three-dimensional cut",
+        "Camouflage scratch-resistant"
+      ]
+    },
+    {
+      "id": "g2-tactical-short-sleeve",
+      "name": "G2 Tactical Short Sleeve",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/g2-tactical-short-sleeve_photo.jpg",
+      "fabric": "65% polyester + 35% cotton / 97% cotton + 3% spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Fine workmanship, neatly aligned",
+        "Nylon patch on both arms",
+        "Camouflage waterproof design",
+        "Elasticated body parts",
+        "Classic shape, three-dimensional cut",
+        "Camouflage scratch-resistant"
+      ]
+    },
+    {
+      "id": "g3-tactical-long-sleeve",
+      "name": "G3 Tactical Long Sleeve",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/g3-tactical-long-sleeve_photo.jpg",
+      "fabric": "65% polyester + 35% cotton / 97% stretch cotton + 3% spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Elbow pads can be fitted",
+        "Nylon patch on both arms",
+        "Adjustable cuffs",
+        "Waterproof and wear-resistant",
+        "3D cut for a flattering fit",
+        "Classic shape design"
+      ]
+    },
+    {
+      "id": "m65-punch-windbreaker",
+      "name": "M65 Punch Windbreaker",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/m65-punch-windbreaker_photo.jpg",
+      "fabric": "65% polyester + 35% cotton",
+      "season": "Spring, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Waterproof fabric, neat stitching",
+        "Nylon patch on both arms",
+        "Adjustable cuffs",
+        "Scratch-resistant and breathable",
+        "Classic hooded design",
+        "Three-dimensional cut to fit the body"
+      ]
+    },
+    {
+      "id": "special-ops-tactical-long-sleeve",
+      "name": "Special Ops Tactical Long Sleeve",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/special-ops-tactical-long-sleeve_photo.jpg",
+      "fabric": "65% polyester + 35% cotton / 97% stretch cotton + 3% spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Elbow pads can be fitted",
+        "Nylon patch on both arms",
+        "Adjustable cuffs",
+        "Elasticated body parts",
+        "Classic shape, three-dimensional cut",
+        "Camouflage scratch-resistant"
+      ]
+    },
+    {
+      "id": "dragon-armor-tactical-long-sleeve",
+      "name": "Dragon Armor Tactical Long Sleeve",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/dragon-armor-tactical-long-sleeve_photo.jpg",
+      "fabric": "65% polyester + 35% cotton / 97% stretch cotton + 3% spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Elbow pads can be fitted",
+        "Nylon patch on both arms",
+        "Adjustable cuffs",
+        "Elasticated body parts",
+        "Classic shape, three-dimensional cut",
+        "Camouflage scratch-resistant"
+      ]
+    },
+    {
+      "id": "special-ops-tactical-short-sleeve",
+      "name": "Special Ops Tactical Short Sleeve",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/special-ops-tactical-short-sleeve_photo.jpg",
+      "fabric": "65% polyester + 35% cotton / 97% cotton + 3% spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Fine workmanship, neatly aligned",
+        "Nylon patch on both arms",
+        "Camouflage waterproof design",
+        "Elasticated body parts",
+        "Classic shape, three-dimensional cut",
+        "Camouflage scratch-resistant"
+      ]
+    },
+    {
+      "id": "r6-tactical-base-layer",
+      "name": "R6 Tactical Base Layer",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/r6-tactical-base-layer_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Soft and high elastic fabric",
+        "Patch design on both arms",
+        "Tight-fitting to show off the body",
+        "Moisture-wicking and quick-drying",
+        "Classic shape, three-dimensional cut",
+        "Sweat-wicking and breathable"
+      ]
+    },
+    {
+      "id": "lightweight-cultural-t-shirt",
+      "name": "Lightweight Cultural T-Shirt",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/lightweight-cultural-t-shirt_photo.jpg",
+      "fabric": "Cotton",
+      "season": "Summer",
+      "description": "",
+      "advantages": [
+        "Pure cotton fabric",
+        "Exquisite printing",
+        "Neat wiring",
+        "Classic round neck design",
+        "Fine workmanship",
+        "Soft and comfortable"
+      ]
+    },
+    {
+      "id": "striker-quick-dry-t-shirt",
+      "name": "Striker Quick Dry T-Shirt",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/striker-quick-dry-t-shirt_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer",
+      "description": "",
+      "advantages": [
+        "Stretchy, crease-resistant fabric",
+        "Small pockets on both arms",
+        "Waterproof fabric, neat stitching",
+        "Three-dimensional cut to fit the body",
+        "Quick-drying, breathable and wicking",
+        "Classic round neckline design"
+      ]
+    },
+    {
+      "id": "wilderness-camo-t-shirt",
+      "name": "Wilderness Camo T-Shirt",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/wilderness-camo-t-shirt_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer",
+      "description": "",
+      "advantages": [
+        "Stretchy, crease-resistant fabric",
+        "Small pockets on both arms",
+        "Waterproof fabric, neat stitching",
+        "Three-dimensional cut to fit the body",
+        "Quick-drying, breathable and wicking",
+        "Classic lapel design"
+      ]
+    },
+    {
+      "id": "vanguard-quick-dry-long-sleeve",
+      "name": "Vanguard Quick Dry Long Sleeve",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/vanguard-quick-dry-long-sleeve_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Stretchy, crease-resistant fabric",
+        "Hidden chest pocket",
+        "Waterproof fabric, neat stitching",
+        "Three-dimensional cut to fit the body",
+        "Chest pocket reinforced loading",
+        "Classic lapel design"
+      ]
+    },
+    {
+      "id": "vanguard-quick-dry-t-shirt",
+      "name": "Vanguard Quick Dry T-Shirt",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/vanguard-quick-dry-t-shirt_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer",
+      "description": "",
+      "advantages": [
+        "Stretchy, crease-resistant fabric",
+        "Hidden chest pocket",
+        "Waterproof fabric, neat stitching",
+        "Three-dimensional cut to fit the body",
+        "Chest pocket reinforced loading",
+        "Classic lapel design"
+      ]
+    },
+    {
+      "id": "dragon-armor-short-sleeve",
+      "name": "Dragon Armor Short Sleeve",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/dragon-armor-short-sleeve_photo.jpg",
+      "fabric": "65% polyester + 35% cotton / 97% cotton + 3% spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Fine workmanship, neatly aligned",
+        "Nylon patch on both arms",
+        "Camouflage waterproof design",
+        "Elasticated body parts",
+        "Classic shape, three-dimensional cut",
+        "Camouflage scratch-resistant"
+      ]
+    },
+    {
+      "id": "cold-proof-hooded-jacket",
+      "name": "Cold-Proof Hooded Jacket",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/cold-proof-hooded-jacket_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Zippered chest pocket",
+        "Windproof cuff system",
+        "Hooded drawstring design",
+        "Arm patch with zipper pocket",
+        "Warm design fears no cold outdoors",
+        "Three dimensional cutting that fits the body"
+      ]
+    },
+    {
+      "id": "dragon-armor-hard-shell-windbreaker",
+      "name": "Dragon Armor Hard Shell Windbreaker",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/dragon-armor-hard-shell-windbreaker_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Waterproof fabric, neat stitching",
+        "Nylon patch on both arms",
+        "Adjustable cuffs",
+        "Scratch-resistant and breathable",
+        "Classic hooded design",
+        "Three-dimensional cut to fit the body"
+      ]
+    },
+    {
+      "id": "assassin-tactical-jacket-v2",
+      "name": "Assassin Tactical Jacket V2",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/assassin-tactical-jacket-v2_photo.jpg",
+      "fabric": "65% polyester + 35% cotton",
+      "season": "Spring, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Breathable and sweat-wicking fabric",
+        "Classic fit",
+        "Horseshoe cuff design",
+        "Abrasion and scratch resistant",
+        "Stand-up collar and neat stitching",
+        "Three-dimensional cut to fit the body"
+      ]
+    },
+    {
+      "id": "assassin-hooded-fleece-jacket",
+      "name": "Assassin Hooded Fleece Jacket",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/assassin-hooded-fleece-jacket_photo.jpg",
+      "fabric": "65% polyester + 35% cotton",
+      "season": "Spring, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Warm and cozy fleece fabric",
+        "Classic fit",
+        "Horseshoe cuff design",
+        "Abrasion and scratch resistant",
+        "Hooded design and neat stitching",
+        "Three-dimensional cut to fit the body"
+      ]
+    },
+    {
+      "id": "assassin-stand-collar-fleece",
+      "name": "Assassin Stand Collar Fleece",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/assassin-stand-collar-fleece_photo.jpg",
+      "fabric": "65% polyester + 35% cotton",
+      "season": "Spring, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Warm and cozy fleece fabric",
+        "Classic fit",
+        "Horseshoe cuff design",
+        "Abrasion and scratch resistant",
+        "Stand-up collar and neat stitching",
+        "Three-dimensional cut to fit the body"
+      ]
+    },
+    {
+      "id": "assassin-quick-dry-t-shirt",
+      "name": "Assassin Quick Dry T-Shirt",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/assassin-quick-dry-t-shirt_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer",
+      "description": "",
+      "advantages": [
+        "Stretchy, crease-resistant fabric",
+        "Small pockets on both arms",
+        "Waterproof fabric, neat stitching",
+        "Three-dimensional cut to fit the body",
+        "Quick-drying, breathable and wicking",
+        "Classic round neckline design"
+      ]
+    },
+    {
+      "id": "assassin-softshell-jacket",
+      "name": "Assassin Softshell Jacket",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/assassin-softshell-jacket_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Zippered chest pocket",
+        "Windproof cuff system",
+        "Hooded drawstring design",
+        "Arm patch with zipper pocket",
+        "Warm design fears no cold outdoors",
+        "Three dimensional cutting that fits the body"
+      ]
+    },
+    {
+      "id": "combat-shirt-1st-gen",
+      "name": "Combat Shirt 1st Gen",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/combat-shirt-1st-gen_photo.jpg",
+      "fabric": "65% polyester + 35% cotton / 97% stretch cotton + 3% spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Elbow pads can be fitted",
+        "Nylon patch on both arms",
+        "Adjustable cuffs",
+        "Elasticated body parts",
+        "Classic shape, three-dimensional cut",
+        "Camouflage scratch-resistant"
+      ]
+    },
+    {
+      "id": "combat-shirt-4th-gen",
+      "name": "Combat Shirt 4th Gen",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/combat-shirt-4th-gen_photo.jpg",
+      "fabric": "65% polyester + 35% cotton / 97% stretch cotton + 3% spandex",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": [
+        "Elbow pads can be fitted",
+        "Nylon patch on both arms",
+        "Adjustable cuffs",
+        "Waterproof and wear-resistant",
+        "3D cut for a flattering fit",
+        "Classic shape design"
+      ]
+    },
+    {
+      "id": "vanguard-quick-dry-shirt-alt",
+      "name": "Vanguard Quick Dry Shirt",
+      "price": 0,
+      "category": "tops",
+      "image": "/products/tops/vanguard-quick-dry-shirt-alt_photo.jpg",
+      "fabric": "Polyester",
+      "season": "Spring, summer, autumn, winter",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "blade-tactical-pants",
+      "name": "Blade Tactical Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/blade-tactical-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "darkwalker-quick-dry-pants",
+      "name": "Darkwalker Quick Dry Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/darkwalker-quick-dry-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "darkwalker-quick-dry-shorts",
+      "name": "Darkwalker Quick Dry Shorts",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/darkwalker-quick-dry-shorts_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "dragon-armor-long-pants",
+      "name": "Dragon Armor Long Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/dragon-armor-long-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "g2-tactical-pants",
+      "name": "G2 Tactical Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/g2-tactical-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "g3-lurker-pants",
+      "name": "G3 Lurker Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/g3-lurker-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "g3-tactical-pants",
+      "name": "G3 Tactical Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/g3-tactical-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "hurricane-shorts",
+      "name": "Hurricane Shorts",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/hurricane-shorts_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "raptor-tactical-pants",
+      "name": "Raptor Tactical Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/raptor-tactical-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "strider-tactical-pants",
+      "name": "Strider Tactical Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/strider-tactical-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "striker-tactical-pants",
+      "name": "Striker Tactical Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/striker-tactical-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "x8-tactical-pants",
+      "name": "X8 Tactical Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/x8-tactical-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "clipper-quick-dry-long-pants",
+      "name": "Clipper Quick Dry Long Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/clipper-quick-dry-long-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "clipper-quick-dry-shorts",
+      "name": "Clipper Quick Dry Shorts",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/clipper-quick-dry-shorts_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "storm-softshell-fleece-pants",
+      "name": "Storm Softshell Fleece Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/storm-softshell-fleece-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "stealth-softshell-fleece-pants",
+      "name": "Stealth Softshell Fleece Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/stealth-softshell-fleece-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "dragon-jogger-pants",
+      "name": "Dragon Jogger Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/dragon-jogger-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "cold-proof-padded-pants",
+      "name": "Cold-Proof Padded Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/cold-proof-padded-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "thunder-tactical-pants",
+      "name": "Thunder Tactical Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/thunder-tactical-pants_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "assassin-shorts",
+      "name": "Assassin Shorts",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/assassin-shorts_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "vanguard-quick-dry-pants-alt",
+      "name": "Vanguard Quick Dry Pants",
+      "price": 0,
+      "category": "bottoms",
+      "image": "/products/bottoms/vanguard-quick-dry-pants-alt_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "996-mid-desert-boots",
+      "name": "996 Mid Desert Boots",
+      "price": 0,
+      "category": "boots",
+      "image": "/products/boots/996-mid-desert-boots_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "997-low-desert-boots",
+      "name": "997 Low Desert Boots",
+      "price": 0,
+      "category": "boots",
+      "image": "/products/boots/997-low-desert-boots_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    },
+    {
+      "id": "997-mid-desert-boots",
+      "name": "997 Mid Desert Boots",
+      "price": 0,
+      "category": "boots",
+      "image": "/products/boots/997-mid-desert-boots_photo.jpg",
+      "fabric": "",
+      "season": "",
+      "description": "",
+      "advantages": []
+    }
+  ]
