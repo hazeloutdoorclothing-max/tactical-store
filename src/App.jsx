@@ -21,9 +21,10 @@ const mobileCSS = `
     .header-right-nav { display: none !important; }
     .header-contact-bar { display: none !important; }
     .mobile-menu-btn { display: flex !important; }
+    .mobile-header-icons { display: flex !important; }
     .hero-banner { height: 90vh !important; }
     .hero-grid { display: none !important; }
-    .hero-mobile-img { display: block !important; }
+    .hero-mobile-img { display: block !important; opacity: 0.7 !important; }
     .hero-title { font-size: 2.2rem !important; }
     .hero-subtitle { font-size: 0.8rem !important; max-width: 90% !important; }
     .card-mobile-actions { display: flex !important; }
@@ -60,6 +61,7 @@ const PhoneIcon = ({ size = 18, color = "currentColor" }) => (
 
 function ProductCard({ product, onClick }) {
   const [showInfo, setShowInfo] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
   const hasDetails = product.fabric || (product.advantages && product.advantages.length > 0);
 
   const handleWhatsApp = (e) => {
@@ -69,14 +71,18 @@ function ProductCard({ product, onClick }) {
     window.open(`https://wa.me/${PHONE}?text=${msg}`, "_blank");
   };
 
+  const handleTouchStart = () => {
+    setIsTouchDevice(true);
+    setShowInfo((prev) => !prev);
+  };
+
   return (
     <div
       style={{ cursor: "pointer", position: "relative" }}
       onMouseEnter={() => setShowInfo(true)}
       onMouseLeave={() => setShowInfo(false)}
-      onTouchStart={() => setShowInfo(true)}
-      onTouchEnd={() => setTimeout(() => setShowInfo(false), 2500)}
-      onClick={() => onClick(product)}
+      onTouchStart={handleTouchStart}
+      onClick={() => { if (!isTouchDevice) onClick(product); }}
     >
       <div style={{ position: "relative", overflow: "hidden" }}>
         <img
@@ -331,6 +337,29 @@ export default function App() {
           >
             ☰
           </button>
+
+          {/* Mobile contact icons (right side, visible only on mobile) */}
+          <div
+            className="mobile-header-icons"
+            style={{
+              display: "none",
+              alignItems: "center",
+              gap: "1.25rem",
+              position: "absolute",
+              right: "2rem",
+              zIndex: 11,
+            }}
+          >
+            <a href={`mailto:${EMAIL}`} style={{ color: "rgba(255,255,255,0.8)", lineHeight: 0 }}>
+              <MailIcon size={20} color="currentColor" />
+            </a>
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" style={{ color: "#25D366", lineHeight: 0 }}>
+              <WhatsAppIcon size={20} color="currentColor" />
+            </a>
+            <span style={{ color: "rgba(255,255,255,0.35)", lineHeight: 0, cursor: "default" }} title="Coming soon">
+              <InstagramIcon size={20} color="currentColor" />
+            </span>
+          </div>
 
           {/* Left nav (desktop) */}
           <nav className="header-nav" style={{
